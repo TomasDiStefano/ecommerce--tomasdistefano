@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../public/img-logo.png';
 import "./NavBar.css"
+import CartWidget from './CartWidget';
 
 
 const NavBar = () => {
@@ -28,10 +29,7 @@ const NavBar = () => {
               <NavDropdown.Item href="sensores">Sensores</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <div className="cart-item">
-            <div className="cart-item--notification">0</div>
-            <i className="bi bi-cart2 cart-img"></i> {/* Icono de carrito de compras */}
-          </div>
+          <CartWidget></CartWidget>
         </Navbar.Collapse>
       </Container>
     </Navbar>
