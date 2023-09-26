@@ -28,12 +28,11 @@ const NavBar = () => {
               <NavDropdown.Item href="sensores">Sensores</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          
-          <div className="navbar-text cart-img">
-            <i className="bi bi-cart2"></i> {/* Icono de carrito de compras */}
+          <div className="cart-item">
+            <div className="cart-item--notification">0</div>
+            <i className="bi bi-cart2 cart-img"></i> {/* Icono de carrito de compras */}
           </div>
         </Navbar.Collapse>
-        
       </Container>
     </Navbar>
   );
