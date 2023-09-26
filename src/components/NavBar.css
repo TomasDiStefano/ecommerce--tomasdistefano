@@ -1,0 +1,32 @@
+.navbar-container{
+    background-color: black;
+}
+
+.logo{
+    height: 4rem;
+}
+
+.cart-img{
+    font-size: 1.9rem;
+}
+
+.cart-item {
+    position: relative;
+  }
+.cart-item:hover {
+    cursor: pointer;
+}
+.items__cart--notification {
+    display: none;
+    position: absolute;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "roboto", sans-serif;
+    background-color: rgb(255, 54, 54);
+    width: 15px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    top: -5px;
+    left: 30px;
+    text-align: center;
+}
