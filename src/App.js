@@ -1,10 +1,11 @@
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css'
 
 function App() {
   return (
-    <div>
+    <div className="app--container">
       
       <NavBar></NavBar>
       
@@ -22,6 +23,3 @@ function App() {
 }
 
 export default App;
-
-
-/**/

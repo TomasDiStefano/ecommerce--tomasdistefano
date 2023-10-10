@@ -1,0 +1,14 @@
+.product-card {
+    background-color: #BCBD8B;
+    border-radius: 10px;
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.product-img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}

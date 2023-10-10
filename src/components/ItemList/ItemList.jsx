@@ -1,13 +1,10 @@
 import React from 'react';
 import Item from '../Item/Item';
 
-
 const ItemList = ({ products }) => {
-  console.log("PRODUCTOS", products)
   return (
-    <div>
-      {JSON.stringify(products)}
-      {products.map(prod => <Item key={prod.id} {...prod} />)}
+    <div className="d-flex flex-wrap justify-content-center">
+      {products.map(prod => <Item key={prod.id} {...prod} />)}  
     </div>
   )
 }
