@@ -6,27 +6,28 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../public/img-logo.png';
 import "./NavBar.css"
 import CartWidget from './CartWidget';
+//import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 const NavBar = () => {
   return (
     <Navbar expand="lg" bg="black" variant="dark">
       <Container>
-        <Navbar.Brand href="inicio">
+        <Navbar.Brand>
           <img src={logo} alt='' className='logo'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="inicio">Inicio</Nav.Link>
-            <Nav.Link href="nosotros">¿Quiénes somos?</Nav.Link>
-            <Nav.Link href="contacto">Contacto</Nav.Link>
+            <Nav.Link>Inicio</Nav.Link>
+            <Nav.Link>¿Quiénes somos?</Nav.Link>
+            <Nav.Link>Contacto</Nav.Link>
             <NavDropdown title="Repuestos" id="basic-nav-dropdown" data-bs-theme="dark">
-              <NavDropdown.Item href="bombas">Bombas</NavDropdown.Item>
-              <NavDropdown.Item href="inyectores">
+              <NavDropdown.Item>Bombas</NavDropdown.Item>
+              <NavDropdown.Item>
                 Inyectores
               </NavDropdown.Item>
-              <NavDropdown.Item href="sensores">Sensores</NavDropdown.Item>
+              <NavDropdown.Item>Sensores</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <CartWidget></CartWidget>
