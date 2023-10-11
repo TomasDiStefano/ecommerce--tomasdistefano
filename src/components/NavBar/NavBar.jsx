@@ -18,9 +18,9 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/category/inyectores">Inyectores</Nav.Link>
-            <Nav.Link as={Link} to="/category/bombas">Bombas</Nav.Link>
-            <Nav.Link as={Link} to="/category/sensores">Sensores</Nav.Link>
+            <Nav.Link as={Link} to="/category/inyector">Inyectores</Nav.Link>
+            <Nav.Link as={Link} to="/category/bomba">Bombas</Nav.Link>
+            <Nav.Link as={Link} to="/category/sensor">Sensores</Nav.Link>
           </Nav>
           <CartWidget></CartWidget>
         </Navbar.Collapse>
