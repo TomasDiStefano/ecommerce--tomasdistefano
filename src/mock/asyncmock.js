@@ -1,87 +1,111 @@
 const products =
     [{
-        id: "0",
-        category: "inyector",
-        specification: "0445116035",
-        price: 140377,
-        img: "/img/Inyector Amarok.png"
+      id: "0",
+      category: "inyector",
+      name: "Inyector Volkswagen Amarok 2.0L",
+      price: 140377,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Inyector Amarok.png",
       },
       {
-        id: "1",
-        category: "inyector",
-        specification: "0445120007",
-        price: 105340,
-        img: "/img/Inyector Ford Cargo 1722.png"
+      id: "1",
+      category: "inyector",
+      name: "Inyector Ford Cargo 1722",
+      price: 105340,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Inyector Ford Cargo 1722.png"
       },
       {
-        id: "2",
-        category: "inyector",
-        specification: "0414701013",
-        price: 267105,
-        img: "/img/Inyector Bomba Stralis.png"
+      id: "2",
+      category: "inyector",
+      name: "Inyector Stralis 410NR",
+      price: 267105,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Inyector Bomba Stralis.png"
       },
       {
-        id: "3",
-        category: "inyector",
-        specification: "0445120120",
-        price: 74250,
-        img: "/img/Inyector Cummins.png"
+      id: "3",
+      category: "inyector",
+      name: "Inyector Ford Cargo 2042",
+      price: 74250,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Inyector Cummins.png"
       },
       {
-        id: "4",
-        category: "inyector",
-        specification: "0432191442",
-        price: 25430,
-        img: "/img/Inyector Mercedes benz.png"
+      id: "4",
+      category: "inyector",
+      name: "Inyector Atego 1725",
+      price: 25430,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Inyector Mercedes benz.png"
       },
       {
-        id: "5",
-        category: "inyector",
-        specification: "97095008292",
-        price: 189211,
-        img: "/img/Inyector Toyota.png"
+      id: "5",
+      category: "inyector",
+      name: "Inyector Hilux 3.0L",
+      price: 189211,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Inyector Toyota.png"
       },
       {
-        id: "6",
-        category: "bomba",
-        specification: "John Deere",
-        price: 140377,
-        img: "/img/Bomba John Deere.png"
+      id: "6",
+      category: "bomba",
+      name: "Bomba John Deere 8335R",
+      price: 140377,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Bomba John Deere.png"
       },
       {
-        id: "7",
-        category: "bomba",
-        specification: "Toyota Hilux",
-        price: 140377,
-        img: "/img/Bomba Toyota Hilux.png"
+      id: "7",
+      category: "bomba",
+      name: "Bomba Hilux 3.0",
+      price: 140377,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Bomba Toyota Hilux.png"
       },
       {
-        id: "8",
-        category: "bomba",
-        specification: "Amarok",
-        price: 140377,
-        img: "/img/Bomba Amarok.png"
+      id: "8",
+      category: "bomba",
+      name: "Bomba Amarok 2.0L",
+      price: 140377,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Bomba Amarok.png"
       },
       {
-        id: "9",
-        category: "sensor",
-        specification: "MAP",
-        price: 140377,
-        img: "/img/Sensor MAP.png"
+      id: "9",
+      category: "sensor",
+      name: "Sensor presión de turbo",
+      price: 140377,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Sensor MAP.png"
       },
       {
-        id: "10",
-        category: "sensor",
-        specification: "presion de rail",
-        price: 140377,
-        img: "/img/Sensor presion de rail.png"
+      id: "10",
+      category: "sensor",
+      name: "Sensor presion de rail",
+      price: 140377,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Sensor presion de rail.png"
       },
       {
-        id: "11",
-        category: "sensor",
-        specification: "Flujo de Aire",
-        price: 140377,
-        img: "/img/Sensor Flujo de Aire.png"
+      id: "11",
+      category: "sensor",
+      name: "Sensor flujo de aire",
+      price: 140377,
+      description: "SOY UNA DESCRIPCION",
+      stock: 20,
+      img: "/img/Sensor Flujo de Aire.png"
       }]
 
 export const getProducts = () =>  {
@@ -94,9 +118,11 @@ export const getProducts = () =>  {
 
 export const getProductById = (id) => {
     return new Promise(resolve => {
-        setTimeout(() => {
-            const product = products.find(prod => prod.id === id);
-            resolve(product);
+      setTimeout(() => {
+          console.log(products);
+          const product = products.find(prod => prod.id === id);
+          console.log("product", typeof(id),id)
+          resolve(product);
         },100)
     })
 }
