@@ -9,7 +9,7 @@ const Item = ({ id, category, specification, price, img }) => {
     <Card className='product-card' >
       <Card.Img className='product-img' variant="top" src={img} />
       <Card.Body>
-        <Card.Title>{category} + {specification}</Card.Title>
+        <Card.Title>{category} {specification}</Card.Title>
         <Card.Text>
           Aca va la descripcion
         </Card.Text> 
