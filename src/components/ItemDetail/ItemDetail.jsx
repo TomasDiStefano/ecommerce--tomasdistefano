@@ -1,14 +1,38 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ItemDetail.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 const ItemDetail = ({ category, name, price, description, img, stock }) => {
   return (
-    <div style={{ background: "white", border:"red", margin: "50px" }}>
-      <div className='item-detail-container row align-items-top'>
-          <div className='item-detail-image col-6 text-end'>
-            <img src={img} alt={description} style={{width: "400px", height: "400px" , padding:"50px", backgroundColor:"white"}}/>  
+    <Container>
+      <Row style={{ background: "white", margin: "10px"}}>
+        <Col md={6} xs={12}><img style={{width: "100%"}} src={img} alt={name} /></Col>
+        <Col style={{ background:"gray"}} >
+          <div style={{padding:"10px" }}>
+            <h1 style={{paddingBottom: "5px",borderBottom:"1px solid black", fontSize: "30px", fontWeight: "1000", marginTop:"15px"}}>{name}</h1>
+            <h3 style={{ fontSize: "20px", fontWeight: "700", marginTop: "30px", marginBottom: "30px" }}> $ {price} /per unit ({stock} in stock)</h3>
+            <h2 style={{ marginTop: "20px", fontSize: "30px" }}>Description</h2>
+            <p>{description}</p>
           </div>
+          
+        </Col>
+      </Row>
+    </Container>
+    
+  )
+}
+
+export default ItemDetail
+
+/* <div style={{ background: "white", border:"red", margin: "50px" }}>
+      <div className='item-detail-container row align-items-top'>
+        <div className='item-detail-image col-6 text-end'>
+          <img src={img} alt={description} style={{width: "400px", height: "400px" , padding:"50px", backgroundColor:"white"}}/>  
+        </div>
         
         <div className='item-detail-description d-flex-column col-4 text-center my-1' >
           <h1 className='text-dark text-start' style={{fontWeight:"bolder", fontSize:"2.3rem"}}> {name} </h1>
@@ -20,8 +44,4 @@ const ItemDetail = ({ category, name, price, description, img, stock }) => {
 
         </div>
       </div>
-    </div>
-  )
-}
-
-export default ItemDetail
+    </div>  */

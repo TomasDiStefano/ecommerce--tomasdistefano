@@ -4,7 +4,7 @@ const products =
       category: "inyector",
       name: "Inyector Volkswagen Amarok 2.0L",
       price: 140377,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Inyector Amarok.png",
       },
@@ -13,7 +13,7 @@ const products =
       category: "inyector",
       name: "Inyector Ford Cargo 1722",
       price: 105340,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Inyector Ford Cargo 1722.png"
       },
@@ -22,7 +22,7 @@ const products =
       category: "inyector",
       name: "Inyector Stralis 410NR",
       price: 267105,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Inyector Bomba Stralis.png"
       },
@@ -31,7 +31,7 @@ const products =
       category: "inyector",
       name: "Inyector Ford Cargo 2042",
       price: 74250,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Inyector Cummins.png"
       },
@@ -40,7 +40,7 @@ const products =
       category: "inyector",
       name: "Inyector Atego 1725",
       price: 25430,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Inyector Mercedes benz.png"
       },
@@ -49,7 +49,7 @@ const products =
       category: "inyector",
       name: "Inyector Hilux 3.0L",
       price: 189211,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Inyector Toyota.png"
       },
@@ -58,7 +58,7 @@ const products =
       category: "bomba",
       name: "Bomba John Deere 8335R",
       price: 140377,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Bomba John Deere.png"
       },
@@ -67,7 +67,7 @@ const products =
       category: "bomba",
       name: "Bomba Hilux 3.0",
       price: 140377,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Bomba Toyota Hilux.png"
       },
@@ -76,7 +76,7 @@ const products =
       category: "bomba",
       name: "Bomba Amarok 2.0L",
       price: 140377,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Bomba Amarok.png"
       },
@@ -85,7 +85,7 @@ const products =
       category: "sensor",
       name: "Sensor presión de turbo",
       price: 140377,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Sensor MAP.png"
       },
@@ -94,7 +94,7 @@ const products =
       category: "sensor",
       name: "Sensor presion de rail",
       price: 140377,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Sensor presion de rail.png"
       },
@@ -103,7 +103,7 @@ const products =
       category: "sensor",
       name: "Sensor flujo de aire",
       price: 140377,
-      description: "SOY UNA DESCRIPCION",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
       stock: 20,
       img: "/img/Sensor Flujo de Aire.png"
       }]
