@@ -4,6 +4,7 @@ import './ItemDetail.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import CountButton from '../CountButton/CountButton';
 
 
 const ItemDetail = ({ category, name, price, description, img, stock }) => {
@@ -17,6 +18,7 @@ const ItemDetail = ({ category, name, price, description, img, stock }) => {
             <h3 style={{ fontSize: "20px", fontWeight: "700", marginTop: "30px", marginBottom: "30px" }}> $ {price} /per unit ({stock} in stock)</h3>
             <h2 style={{ marginTop: "20px", fontSize: "30px" }}>Description</h2>
             <p>{description}</p>
+            <CountButton stock={stock}/>
           </div>
           
         </Col>
