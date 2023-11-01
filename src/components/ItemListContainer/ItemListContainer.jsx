@@ -13,7 +13,7 @@ const ItemListContainer = (props) => {
         const getProductList = category ? getProductsByCategory : getProducts;
 
         getProductList(category)
-            .then(res => { setProducts(res); console.log("RESPUESTA:", res) })
+            .then(res => { setProducts(res) })
     }, [category]) 
 
     return (

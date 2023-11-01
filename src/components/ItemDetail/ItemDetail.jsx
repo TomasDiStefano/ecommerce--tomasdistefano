@@ -7,15 +7,21 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ItemCount from '../ItemCount/ItemCount';
+import { CartContext } from '../Context/CartContext';
+import { useContext } from 'react';
 
 
-const ItemDetail = ({ category, name, price, description, img, stock }) => {
+const ItemDetail = ({ id, category, name, price, description, img, stock }) => {
 
   const [itemAddedQty, setItemAddedQty] = useState(0);
 
-  const addToCart = (itemQty) => {
-    console.log('Add to cart', itemQty, itemAddedQty);
+  const { addProduct } = useContext(CartContext);
+
+  const handelItemQty = (itemQty) => {
     setItemAddedQty(itemAddedQty + itemQty);
+    
+    const item = { id, name, price };
+    addProduct(item, itemQty);
   }
 
   return (
@@ -28,7 +34,7 @@ const ItemDetail = ({ category, name, price, description, img, stock }) => {
             <h3 style={{ fontSize: "20px", fontWeight: "700", marginTop: "30px", marginBottom: "30px" }}> $ {price} /per unit ({stock} in stock)</h3>
             <h2 style={{ marginTop: "20px", fontSize: "30px" }}>Description</h2>
             <p>{description}</p>
-            <ItemCount stock={stock} addToCart={addToCart} />
+            <ItemCount stock={stock} handelItemQty={handelItemQty} />
             <div>
               <Link to="/cart"> Finalizar compra </Link>
             </div>
