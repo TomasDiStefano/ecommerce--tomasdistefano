@@ -1,13 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ItemDetail.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CountButton from '../CountButton/CountButton';
+import ItemCount from '../ItemCount/ItemCount';
 
 
 const ItemDetail = ({ category, name, price, description, img, stock }) => {
+
+  const [itemAddedQty, setItemAddedQty] = useState(0);
+
+  const addToCart = (itemQty) => {
+    console.log('Add to cart', itemQty, itemAddedQty);
+    setItemAddedQty(itemAddedQty + itemQty);
+  }
+
   return (
     <Container>
       <Row style={{ background: "white", margin: "10px"}}>
@@ -18,7 +28,11 @@ const ItemDetail = ({ category, name, price, description, img, stock }) => {
             <h3 style={{ fontSize: "20px", fontWeight: "700", marginTop: "30px", marginBottom: "30px" }}> $ {price} /per unit ({stock} in stock)</h3>
             <h2 style={{ marginTop: "20px", fontSize: "30px" }}>Description</h2>
             <p>{description}</p>
-            <CountButton stock={stock}/>
+            <ItemCount stock={stock} addToCart={addToCart} />
+            <div>
+              <Link to="/cart"> Finalizar compra </Link>
+            </div>
+            
           </div>
           
         </Col>

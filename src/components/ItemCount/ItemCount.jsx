@@ -1,12 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 
-const CountButton = ({ stock }) => {
+const ItemCount = ({ stock, addToCart }) => {
 
     const [itemQty, setItemQty ] = useState(1);
 
     const itemOnAdd = () => {
-        console.log(stock);
         if (itemQty < stock) {
             setItemQty(itemQty + 1);
         }
@@ -18,20 +17,16 @@ const CountButton = ({ stock }) => {
         }
     }
 
-    const addToCart = () => {
-        console.log('Se agrego al carrito el producto')
-    }
-
     return (
         <>
             <button onClick={itemOnAdd}> + </button>
             <strong> {itemQty} </strong>
             <button onClick={itemOnDecrease}> - </button>
 
-            <button onClick={addToCart}>Agregar al carrito</button>
+            <button onClick={() => addToCart(itemQty)}>Agregar al carrito</button>
         </>
       
   )
 }
 
-export default CountButton
+export default ItemCount

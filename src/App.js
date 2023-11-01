@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<ItemListContainer/>}></Route>
           <Route path="/category/:category" element={<ItemListContainer />}></Route>
           <Route path="/item/:itemId" element={<ItemDetailContainer />}></Route>
-          <Route></Route>
+          <Route path="*" element={<h2>Sitio en construcción, vuelva más tarde</h2>}  />
         </Routes>
       </BrowserRouter>
     </div>
