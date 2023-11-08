@@ -1,10 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDw0fAOmeT5nfPY99G7PJ3o2ImOGzXDOd0",
   authDomain: "ecommerce-diesel-juncal.firebaseapp.com",
