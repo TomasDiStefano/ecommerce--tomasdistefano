@@ -1,0 +1,11 @@
+.increaseDecreaseButton {
+    margin: 5px;
+    padding-left:7px;
+    padding-right:7px;
+    font-weight: 500    ;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(151, 151, 151);
+}

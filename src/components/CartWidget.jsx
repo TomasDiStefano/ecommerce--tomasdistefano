@@ -8,16 +8,10 @@ const CartWidget = () => {
     const { productsQty } = useContext(CartContext);
 
     return (
-        <Link to="cart">
-            <div className="cart-item">
-                <i className="bi bi-cart2 cart-img"></i>
-                { productsQty > 0 && <div className="cart-item--notification">{productsQty}</div>
-
-                }
-            </div>
-        </Link>
-        
+        <div className="cart-item">
+            <i className="bi bi-cart2 cart-img"></i>
+            {productsQty > 0 && <div className="cart-item--notification">{productsQty}</div>}
+        </div>
     );
 }
-
 export default CartWidget

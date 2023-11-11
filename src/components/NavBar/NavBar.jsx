@@ -22,7 +22,7 @@ const NavBar = () => {
             <Nav.Link as={Link} to="/category/bomba">Bombas</Nav.Link>
             <Nav.Link as={Link} to="/category/sensor">Sensores</Nav.Link>
           </Nav>
-          <CartWidget></CartWidget>
+          <Nav.Link as={Link} to="/cart"><CartWidget></CartWidget></Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

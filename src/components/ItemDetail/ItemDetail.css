@@ -1,0 +1,11 @@
+.detailButtons{
+    font-size: 15px;
+    margin-top:30px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
