@@ -17,11 +17,11 @@ const Cart = () => {
     if (productsQty === 0) {
         return (
             <div className='cart--containter' style={{ background: "white", margin: "20px", textAlign:"center" }}>
-                <i class="bi bi-cart4" style={{fontSize:"70px"}}></i>
+                <i className="bi bi-cart4" style={{fontSize:"70px"}}></i>
                 <h1>El carrito esta vacío</h1>
 
                 <Link style={{ textDecoration: 'inherit', color: 'inherit' }} to="/">
-                    <button className="summary--button" style={{width:"auto", padding:"10px"}} onClick={() => clearCart()}><i className="bi bi-bag"></i> Comprar ahora</button>
+                    <button className="summary--button" style={{width:"auto", padding:"10px"}}><i className="bi bi-bag"></i> Comprar ahora</button>
                 </Link>  
             </div>
         )
@@ -42,7 +42,7 @@ const Cart = () => {
                         <h4>Productos: {productsQty} </h4>
                         <button className="summary--button" onClick={() => clearCart()}> Vaciar Carrito </button>
                         <Link style={{ textDecoration: 'inherit', color: 'inherit' }} to="/checkout">
-                            <button className="summary--button" onClick={() => clearCart()}> Finalizar compra </button>
+                            <button className="summary--button"> Finalizar compra </button>
                         </Link>    
                     </div>
                 </Col>
