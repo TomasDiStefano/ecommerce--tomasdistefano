@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
-import { db } from "../";
+import { db } from "../../services/config";
 import { collection, addDoc } from "firebase/firestore";
 
 const Checkout = () => {
@@ -12,7 +12,7 @@ const Checkout = () => {
     const [error, setError] = useState("");
     const [ordenId, setOrdenId] = useState("");
 
-    const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
+    const { cart, clearCart, total, productsQty } = useContext(CartContext);
 
     //Funciones y validaciones: 
 
@@ -35,10 +35,10 @@ const Checkout = () => {
         //Paso 1: Creamos un objeto con todos los datos de la orden de compra. 
 
         const orden = {
-            items: carrito.map(producto => ({
-                id: producto.item.id,
-                nombre: producto.item.nombre,
-                cantidad: producto.cantidad
+            items: cart.map(product => ({
+                id: product.item.id,
+                nombre: product.item.name,
+                cantidad: product.itemQty
             })),
             total: total,
             fecha: new Date(),
@@ -53,7 +53,7 @@ const Checkout = () => {
         addDoc(collection(db, "ordenes"), orden)
             .then(docRef => {
                 setOrdenId(docRef.id);
-                vaciarCarrito();
+                clearCart();
             })
             .catch(error => {
                 console.log("Error al crear la orden", error);
@@ -66,10 +66,10 @@ const Checkout = () => {
             <h2> Checkout </h2>
             <form onSubmit={manejadorFormulario}>
                 {
-                    carrito.map(producto => (
-                        <div key={producto.item.id}>
-                            <p> {producto.item.nombre} x  {producto.cantidad} </p>
-                            <p> {producto.item.precio} </p>
+                    cart.map(product => (
+                        <div key={product.item.id}>
+                            <p> {product.item.name} x  {product.itemQty} </p>
+                            <p> {product.item.price} </p>
                             <hr />
                         </div>
                     ))
