@@ -13,9 +13,7 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
     const [productsQty, setProductsQty] = useState(0);
-
-    console.log(cart);
-
+    
     const addProduct = (item, itemQty) => {
         const isInCart = cart.find(prod => prod.item.id === item.id);
 
@@ -43,7 +41,7 @@ export const CartProvider = ({children}) => {
 
         setCart(updatedCart);
         setProductsQty(prev => prev - deletedProduct.itemQty );
-        setTotal(prev => prev + (deletedProduct.price * deletedProduct.itemQty));
+        setTotal(prev => prev - (deletedProduct.item.price * deletedProduct.itemQty));
     }
 
     const clearCart = () => {

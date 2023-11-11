@@ -20,7 +20,7 @@ const ItemDetail = ({ id, category, name, price, description, img, stock }) => {
   const handelItemQty = (itemQty) => {
     setItemAddedQty(itemAddedQty + itemQty);
     
-    const item = { id, name, price };
+    const item = { id, name, price, img };
     addProduct(item, itemQty);
   }
 
@@ -49,9 +49,9 @@ const ItemDetail = ({ id, category, name, price, description, img, stock }) => {
                   </Link>  
                   </Col>
                   <Col md={6} xs={12}>
-                  <Link to="/cart"  style={{textDecoration:'inherit', color:'inherit'}}>
+                  <Link to="/"  style={{textDecoration:'inherit', color:'inherit'}}>
                     <div className='detailButtons'>
-                      <i className="bi bi-bag  "> Continuar compra </i>    
+                      <i className="bi bi-bag "> Continuar compra </i>    
                     </div>
                   </Link>  
                 </Col>

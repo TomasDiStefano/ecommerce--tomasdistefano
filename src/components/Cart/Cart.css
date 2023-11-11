@@ -1,0 +1,18 @@
+.cart--containter{
+    margin:30px;
+}
+
+.cart--title{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white
+}
+
+.summary--button{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: black;
+}
